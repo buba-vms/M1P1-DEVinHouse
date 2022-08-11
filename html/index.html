@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="../images/favicon.ico"
+      type="image/x-icon"
+    />
+    <!-- fonts awesome -->
+    <link
+      rel="stylesheet"
+      href="../fontawesome-free-6.1.1-web/fontawesome-free-6.1.1-web/css/all.min.css"
+    />
+    <!-- css -->
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>DEVinHouse Knowledge</title>
+  </head>
+  <body>
+    <main>
+      <div class="main-center">
+        <!-- div formulário -->
+        <div class="formulario">
+          <!-- titulo do formulário -->
+          <div class="title">
+            <i class="fa-solid fa-book"></i>
+            <hgroup>
+              <h3>DEVin<span>Knowledge</span></h3>
+              <h5>Learn, Code and Save</h5>
+            </hgroup>
+          </div>
+          <!-- formulário -->
+          <form id="formulario">
+            <!-- Titulo input -->
+            <div class="input-style">
+              <label for="titulo">Título</label>
+              <input
+                type="text"
+                id="titulo"
+                minlength="8"
+                maxlength="64"
+                placeholder="ex: Flexbox vs Grid"
+              />
+            </div>
+            <!-- Fim do input -->
+            <!-- Skill input -->
+            <div class="input-style">
+              <label for="skill">Skill</label>
+              <input
+                type="text"
+                id="skill"
+                minlength="4"
+                maxlength="16"
+                placeholder="ex: CSS"
+              />
+            </div>
+            <!-- Fim do input -->
+            <!-- Categoria input -->
+            <div class="input-style">
+              <label for="categoria">Categoria</label>
+              <select name="categorias" id="categoria">
+                <option value="selecionar">Selecionar</option>
+                <option value="front-end">Front End</option>
+                <option value="back-end">Back End</option>
+                <option value="fullstack">Fullstack</option>
+                <option value="comportamental">Comportamental/Soft</option>
+              </select>
+            </div>
+            <!-- Fim do input -->
+            <!-- Descrição input -->
+            <div class="input-style">
+              <label for="descricao">Descrição</label>
+              <textarea
+                name="descricao"
+                id="descricao"
+                cols="20"
+                rows="8"
+                minlength="32"
+                maxlength="512"
+                placeholder="Descrição sobre o tema"
+              ></textarea>
+            </div>
+            <!-- Fim do input -->
+            <!-- Descrição input -->
+            <div class="input-style">
+              <label for="video-url"
+                ><span><i class="fa-brands fa-youtube"></i></span> Vídeo do
+                Youtube</label
+              >
+              <input
+                type="url"
+                id="video-url"
+                placeholder="https://www.youtube.com"
+              />
+            </div>
+            <!-- Fim do input -->
+            <div class="action-btns default-mode">
+              <button class="btn btn-limpar">Limpar</button>
+              <button class="btn btn-salvar">Salvar</button>
+            </div>
+            <div class="action-btns hide-card edit-mode">
+              <button class="btn btn-cancelar">Cancelar</button>
+              <button class="btn btn-editar">Editar</button>
+            </div>
+          </form>
+        </div>
+        <!-- display de cartas -->
+        <div class="card-display">
+          <!-- Nav Bar das cartas -->
+          <nav class="nav-bar">
+            <!-- estatisticas -->
+            <div class="estatisticas">
+              <!-- single item -->
+              <div class="estatistica">
+                <h4>Total</h4>
+                <h3 class="total">01</h3>
+              </div>
+              <!-- end of single item -->
+              <!-- single item -->
+              <div class="estatistica">
+                <h4>FrontEnd</h4>
+                <h3 class="front-end">01</h3>
+              </div>
+              <!-- end of single item -->
+              <!-- single item -->
+              <div class="estatistica">
+                <h4>BackEnd</h4>
+                <h3 class="back-end">01</h3>
+              </div>
+              <!-- end of single item -->
+              <!-- single item -->
+              <div class="estatistica">
+                <h4>FullStack</h4>
+                <h3 class="fullstack">01</h3>
+              </div>
+              <!-- end of single item -->
+              <!-- single item -->
+              <div class="estatistica">
+                <h4>SoftSkill</h4>
+                <h3 class="soft-skill">01</h3>
+              </div>
+              <!-- end of single item -->
+            </div>
+            <!-- fim das estatisticas -->
+            <!-- barra de pesquisa -->
+            <div class="pesquisa">
+              <input
+                type="search"
+                id="barra-pesquisa"
+                placeholder="Pesquisar..."
+              />
+              <i class="fa-solid fa-x limpar-pesquisa"></i>
+              <i class="fa-solid fa-magnifying-glass procurar"></i>
+            </div>
+          </nav>
+          <!-- Fim Nav Bar das cartas -->
+          <!-- Cartas -->
+          <div class="cards-center">
+            <!-- <div class="card">
+              <h4>Titulo da Card</h4>
+              <div class="card-data">
+                <h5 class="skill-card"><b>Linguagem/Skill:</b> Javascript</h5>
+                <h5 class="category-card"><b>Categoria:</b> FrontEnd</h5>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Sapiente officia explicabo id optio sint consequatur molestiae
+                  omnis laborum odit reprehenderit fugiat, totam debitis eum
+                  maxime voluptatum iusto ipsam? Alias, quis.
+                </p>
+              </div>
+              <div class="card-buttons">
+                <i class="fa-solid fa-trash card-delete"></i>
+                <i class="fa-solid fa-pen-to-square card-edit"></i>
+                <a href="#"><i class="fa-solid fa-video card-video"></i></a>
+              </div>
+            </div> -->
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- javascript -->
+    <script src="../javascript/formulario.js" type="module"></script>
+    <script src="../javascript/cards.js" type="module"></script>
+    <script src="../javascript/estatisticas.js" type="module"></script>
+    <script src="../javascript/barradepesquisa.js" type="module"></script>
+  </body>
+</html>
