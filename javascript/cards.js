@@ -41,10 +41,10 @@ function editarCard(card = {}) {
 
 export function createCardDeleteBtn() {
   const deleteBtns = document.querySelectorAll('.card-delete');
-
   deleteBtns.forEach((deleteBtn, index) => {
     deleteBtn.addEventListener('click', () => {
       if (confirm('você tem certeza que deseja deletar o cartão?')) {
+        debugger;
         deleteBtns[index].parentElement.parentElement.remove();
         removeCardFromLocalStorage(index);
         atualizarEstatisticas();
